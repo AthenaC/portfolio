@@ -1,0 +1,100 @@
+/* Contact Section */
+#contact-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+  
+.contact-page {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+  
+.follow-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* Center on the left half */
+    margin-top: 10%;
+}
+  
+#follow-me-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+  
+.follow-me img {
+    width: 12rem;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s, transform 0.3s;
+    padding: 2rem;
+}
+  
+.follow-me img:hover {
+    transform: scale(var(--icon-hover-scale));
+}
+  
+  /* Form Styling */
+.contact-form-wrapper {
+    flex: 1;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--form-bg); 
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 600px;
+    margin: 0 auto; /* Center horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+  
+.contact-form label {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: var(--form-input);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
+}
+  
+.contact-form textarea {
+    height: 150px; 
+    font-family: "Inter", serif;
+}
+  
+.submit {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}

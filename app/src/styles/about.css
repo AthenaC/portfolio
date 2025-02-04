@@ -1,0 +1,37 @@
+/* About Section */
+#about {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+#about-container, #hobbies-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+#profile{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#motorcycle {
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

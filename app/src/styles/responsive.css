@@ -1,0 +1,102 @@
+/* Responsive Design */
+@media screen and (max-width: 767px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+  
+    nav .nav ul {
+      flex-direction: column; 
+      gap: 2rem; 
+      padding-top: 1rem;
+    }
+  
+    nav .logo {
+      padding-bottom: 1rem; 
+    }
+  
+    nav .theme-switch {
+      margin-top: 2rem;
+    }
+  
+    .welcome {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    #about-container, #hobbies-container {
+      flex-wrap: wrap;
+    }
+  
+    .project-header {
+      flex-direction: column; /* Stack title and icons */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .icons-container {
+      gap: 10px; /* Reduce gap */
+      margin-left: 0; /* Remove negative margin */
+      margin-top: 10px; /* Add space below title */
+    }
+  
+    .dialog-icon {
+      width: 30px; /* Reduce icon size */
+      height: 30px;
+    }
+  
+    .dialog-close {
+      width: 35px; /* Slightly smaller close button */
+      height: 35px;
+    }
+  
+    .project-title {
+      font-size: 1.5rem; /* Slightly smaller title for balance */
+    }
+  
+    .contact-page {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .contact-container {
+      display: flex;
+      flex-direction: column-reverse; 
+      align-items: center;
+      width: 100%;
+    }
+  
+    .follow-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+  
+    .follow-me-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px; 
+    }
+  
+    .follow-me-icons img {
+      width: 30px; 
+      height: 30px;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150%;
+      max-width: 400px;
+      text-align: center;
+      margin-bottom: 20px; 
+    }
+  }

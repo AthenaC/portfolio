@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap');
+@import 'about.css';
+@import 'contact.css';
+@import 'nav.css';
+@import 'projects.css';
+@import 'responsive.css';
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: "Inter", serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --accent-color: #007bff;
+  --form-bg: #f3f3f3;
+  --form-input: #ffffff;
+  --theme-switch-color: #1f1f21;
+  --project-page: #f3f3f3;
+  --icon-hover-scale: 1.1;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --accent-color: #1e90ff;
+  --form-bg: #1f1f21;
+  --form-input: #333333;
+  --project-page: #333;
+  --theme-switch-color: #f3f3f3;
+}
+
+/* Icon Styling */
+[data-theme="dark"] .github-icon,
+[data-theme="dark"] #github-icon {
+  filter: invert(1)
+}
+
+/* Light/Dark Mode Toggle */
+input#toggle {
+  display: none;
+}
+
+.theme-switch {
+  border: solid;
+  width: 80px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--theme-switch-color);
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1) inset;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background 0.3s;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+  position: absolute;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s;
+}
+
+.sun, .full-moon {
+  width: 20px;
+  position: absolute;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.sun {
+  opacity: 1;
+}
+
+.full-moon {
+  opacity: 0;
+}
+
+/* Dark Mode Styles */
+input[type=checkbox]:checked + .theme-switch {
+  background: var(--theme-switch-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5) inset;
+  border: none;
+}
+
+input[type=checkbox]:checked + .theme-switch .circle {
+  left: 45px;
+  background: var(--bg-color);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+input[type=checkbox]:checked + .theme-switch .circle .sun {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+input[type=checkbox]:checked + .theme-switch .circle .full-moon {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 8rem 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.welcome {
+  font-size: 4rem;
+  padding: 0px 100px 0px 100px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
