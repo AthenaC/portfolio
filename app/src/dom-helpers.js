@@ -15,10 +15,10 @@ const about = () => {
     h1.id = 'about';
     p.id = 'about-body';
     pHobbies.id = 'about-hobbies';
-    imgProfile.src = '/src/images/profile.jpg';
+    imgProfile.src = 'portfolio/app/src/images/profile.jpg';
     imgProfile.id = 'profile';
     imgProfile.alt = 'Profile Picture';
-    imgMotorcycle.src = '/src/images/motorcycle.jpg';
+    imgMotorcycle.src = 'portfolio/app/src/images/motorcycle.jpg';
     imgMotorcycle.id = 'motorcycle';
     imgMotorcycle.alt = 'Motorcycle Picture';
     div.id = 'about-container';
@@ -83,14 +83,14 @@ const followMe = () => {
     h1.id = 'follow-me-title';
     h1.textContent = 'Follow Me @';
     
-    imgGithub.src = '/src/images/github-mark/github-mark.png';
+    imgGithub.src = 'portfolio/app/src/images/github-mark/github-mark.png';
     imgGithub.id = 'github-icon';
     imgGithub.alt = 'GitHub Icon';
     aGithub.href = 'https://github.com/AthenaC';
     aGithub.target = 'blank';
 
     
-    imgLinkedin.src = '/src/images/linkedin-icon.png';
+    imgLinkedin.src = 'portfolio/app/src/images/linkedin-icon.png';
     imgLinkedin.class = 'linkedin-icon';
     imgLinkedin.alt = 'LinkedIn Icon';
     aLinkedin.href = 'https://www.linkedin.com/in/athena-chang-460813ab/';

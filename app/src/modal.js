@@ -37,7 +37,7 @@ export const modal = (projects) => {
 
         const imgGithub = document.createElement('img');
         imgGithub.className = 'dialog-icon github-icon';
-        imgGithub.src = '/src/images/github-mark/github-mark.png';
+        imgGithub.src = 'portfolio/app/src/images/github-mark/github-mark.png';
         imgGithub.alt = 'GitHub';
 
         aGithub.append(imgGithub);
@@ -47,7 +47,7 @@ export const modal = (projects) => {
 
         // Close Button
         const closeButton = document.createElement('img');
-        closeButton.src = '/src/images/close-button.png';
+        closeButton.src = 'portfolio/app/src/images/close-button.png';
         closeButton.className = 'dialog-close';
         closeButton.alt = "Close"
         closeButton.addEventListener('click', () => dialog.close());

@@ -4,14 +4,14 @@ export const projects = {
         icon: '/src/images/palette-picker-icon.png',
         github: 'https://github.com/AthenaC/palette-picker',
         web: 'https://athenac.github.io/palette-picker/',
-        screenshot: '/src/images/palette-picker.png',
+        screenshot: 'portfolio/app/src/images/palette-picker.png',
         preview: '/src/images/preview-palette.png',
         description: "Palette Picker is a simple and intuitive web app that helps users create, customize, and save color palettes for creative projects. Whether you're a designer, artist, or just love exploring colors, the app allows you to generate harmonious palettes, lock favorite colors, and save them for future use. It's a versatile tool that boosts creativity, saves time, and ensures consistent color choices for projects like graphic design, web development, and more."
     },
     
     weatherApp: {
         name: 'FORECAST IT ALREADY!',
-        icon: '/src/images/forecast-it-already-icon.png',
+        icon: 'portfolio/app/src/images/forecast-it-already-icon.png',
         github: 'https://github.com/Forecast-It-Already/Forecast-It-Already',
         web: 'https://forecast-it-already.github.io/Forecast-It-Already/',
         screenshot: '/src/images/weather-app.png',
