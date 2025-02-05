@@ -1,6 +1,6 @@
 import { projects } from './constants.js';
 import githubIcon from "./images/github-mark/github-mark.png"
-import close from "./images/close-button.png'"
+import close from "./images/close-button.png"
 
 export const modal = (projects) => {
     Object.keys(projects).forEach(project => {
