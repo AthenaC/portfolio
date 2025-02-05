@@ -1,5 +1,5 @@
 import palettePickerIcon from "./images/palette-picker-icon.png"
-import palettePickerScreenshot from "./images/palette-picker-icon.png"
+import palettePickerScreenshot from "./images/palette-picker.png"
 import palettePickerPreview from "./images/preview-palette.png"
 import forecastIcon from "./images/forecast-it-already-icon.png"
 import forecastScreenshot from "./images/weather-app.png"

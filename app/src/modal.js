@@ -1,4 +1,6 @@
 import { projects } from './constants.js';
+import githubIcon from "./images/github-mark/github-mark.png"
+import close from "./images/close-button.png'"
 
 export const modal = (projects) => {
     Object.keys(projects).forEach(project => {
@@ -37,7 +39,7 @@ export const modal = (projects) => {
 
         const imgGithub = document.createElement('img');
         imgGithub.className = 'dialog-icon github-icon';
-        imgGithub.src = 'portfolio/app/src/images/github-mark/github-mark.png';
+        imgGithub.src = githubIcon;
         imgGithub.alt = 'GitHub';
 
         aGithub.append(imgGithub);
@@ -47,7 +49,7 @@ export const modal = (projects) => {
 
         // Close Button
         const closeButton = document.createElement('img');
-        closeButton.src = 'portfolio/app/src/images/close-button.png';
+        closeButton.src = close;
         closeButton.className = 'dialog-close';
         closeButton.alt = "Close"
         closeButton.addEventListener('click', () => dialog.close());
