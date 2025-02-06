@@ -1,20 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/images/ac.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Athena Chang</title>
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <div id="app">
-      
       <nav>
         <div class="logo">
           <a class="logo" href="#"><strong>Athena Chang</strong></a>
         </div>
-        
+
         <div class="nav">
           <ul class="nav">
             <li><a href="#about">About</a></li>
@@ -22,44 +21,64 @@
             <li><a href="#follow-me-title">Follow Me</a></li>
             <li><a href="#contact-title">Contact</a></li>
           </ul>
-        </div> 
+        </div>
 
-        <input type="checkbox" id="toggle">
+        <input type="checkbox" id="toggle" />
         <label for="toggle" class="theme-switch">
-            <div class="circle">
-                <img src="/src/images/sun.png" class="sun" alt="sun">
-                <img src="/src/images/full-moon.png" class="full-moon" alt="full-moon">
-            </div>
+          <div class="circle">
+            <img src="/src/images/sun.png" class="sun" alt="sun" />
+            <img
+              src="/src/images/full-moon.png"
+              class="full-moon"
+              alt="full-moon"
+            />
+          </div>
         </label>
       </nav>
-      
+
       <header>
-        <h1 class="welcome">Explore my Journey, Achievements, and Aspirations.</h1>
+        <h1 class="welcome">
+          Explore my Journey, Achievements, and Aspirations.
+        </h1>
       </header>
-      
+
       <section class="about-page"></section>
-      
+
       <section class="projects-page"></section>
-      
+
       <h1 id="contact-title">Contact</h1>
       <section class="contact-page">
-        
         <div class="follow-me"></div>
-        
+
         <div class="contact-form-wrapper">
           <form class="contact-form">
             <label for="name">Name:</label>
-            <input type="text" placeholder="Your Name" required>
-            <br>
+            <input type="text" placeholder="Your Name" id="name" required />
+            <br />
             <label for="email">Email Address:</label>
-            <input type="email" placeholder="Your Email Address" required>
-            <br>
-            <label for="email">Subject:</label>
-            <input type="email" placeholder="Your Subject" required>
-            <br>
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              id="email"
+              required
+            />
+            <br />
+            <label for="subject">Subject:</label>
+            <input
+              type="text"
+              placeholder="Your Subject"
+              id="subject"
+              required
+            />
+            <br />
             <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Your Message..." required></textarea>
-            <br>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+            <br />
             <button type="submit" class="submit">Submit</button>
           </form>
         </div>
@@ -69,7 +88,7 @@
         <div class="logo">
           <a class="logo" href="#"><strong>Athena Chang</strong></a>
         </div>
-        
+
         <div class="nav">
           <ul class="nav">
             <li><a href="#about">About</a></li>
@@ -77,10 +96,9 @@
             <li><a href="#follow-me-title">Follow Me</a></li>
             <li><a href="#contact-title">Contact</a></li>
           </ul>
-        </div> 
-        <hr>
+        </div>
+        <hr />
       </footer>
-    
     </div>
     <script type="module" src="src/main.js"></script>
     <script src="portfolio/app/src/theme-toggle.js"></script>
