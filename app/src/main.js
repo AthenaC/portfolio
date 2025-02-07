@@ -1,4 +1,5 @@
 import { render } from "./dom-helpers.js";
+import { themeToggle } from "./theme-toggle.js";
 import emailjs from "@emailjs/browser";
 
 const handleSubmit = (event) => {
@@ -35,6 +36,7 @@ const handleSubmit = (event) => {
 const main = () => {
   render();
   document.querySelector("form").addEventListener("submit", handleSubmit);
+  themeToggle();
 };
 
 main();
