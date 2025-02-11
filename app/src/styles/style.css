@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap');
-@import 'about.css';
-@import 'contact.css';
-@import 'nav.css';
-@import 'projects.css';
-@import 'responsive.css';
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prata&display=swap");
+@import "about.css";
+@import "contact.css";
+@import "nav.css";
+@import "projects.css";
+@import "responsive.css";
 
 /* General Styling */
 * {
@@ -49,7 +49,7 @@ body {
 /* Icon Styling */
 [data-theme="dark"] .github-icon,
 [data-theme="dark"] #github-icon {
-  filter: invert(1)
+  filter: invert(1);
 }
 
 /* Light/Dark Mode Toggle */
@@ -63,7 +63,8 @@ input#toggle {
   height: 40px;
   border-radius: 999px;
   background: var(--theme-switch-color);
-  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1),
+    2px 2px 10px rgba(0, 0, 0, 0.1) inset;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -77,7 +78,8 @@ input#toggle {
   height: 30px;
   border-radius: 50%;
   background: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+    -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
   position: absolute;
   left: 5px;
   display: flex;
@@ -86,7 +88,8 @@ input#toggle {
   transition: left 0.3s;
 }
 
-.sun, .full-moon {
+.sun,
+.full-moon {
   width: 20px;
   position: absolute;
   transition: opacity 0.3s, transform 0.3s;
@@ -101,24 +104,26 @@ input#toggle {
 }
 
 /* Dark Mode Styles */
-input[type=checkbox]:checked + .theme-switch {
+input[type="checkbox"]:checked + .theme-switch {
   background: var(--theme-switch-color);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
+    -2px -2px 10px rgba(0, 0, 0, 0.5) inset;
   border: none;
 }
 
-input[type=checkbox]:checked + .theme-switch .circle {
+input[type="checkbox"]:checked + .theme-switch .circle {
   left: 45px;
   background: var(--bg-color);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
 }
 
-input[type=checkbox]:checked + .theme-switch .circle .sun {
+input[type="checkbox"]:checked + .theme-switch .circle .sun {
   opacity: 0;
   transform: translateY(10px);
 }
 
-input[type=checkbox]:checked + .theme-switch .circle .full-moon {
+input[type="checkbox"]:checked + .theme-switch .circle .full-moon {
   opacity: 1;
   transform: translateY(0px);
 }
