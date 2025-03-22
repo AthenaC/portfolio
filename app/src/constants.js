@@ -4,6 +4,9 @@ import palettePickerPreview from "./images/preview-palette.png";
 import forecastIcon from "./images/forecast-it-already-icon.png";
 import forecastScreenshot from "./images/weather-app.png";
 import forecastPreview from "./images/preview-forecast.png";
+import bonVoyageIcon from "./images/plane.png";
+import bonVoyageScreenshot from "./images/bon-voyage-screenshot.png";
+import bonVoyagePreview from "./images/bon-voyage-preview.png";
 
 export const projects = {
   palettePicker: {
@@ -26,5 +29,16 @@ export const projects = {
     preview: forecastPreview,
     description:
       "Forecast It Already! is a user-friendly weather application that provides accurate and up-to-date weather information for any location. By utilizing three distinct API endpoints, the app delivers comprehensive data, including current conditions, hourly updates, and detailed multi-day forecasts. The clean and intuitive interface ensures that users can easily access the information they need to plan their activities, making it an invaluable tool for travelers, outdoor enthusiasts, and anyone seeking reliable weather insights.",
+  },
+
+  bonVoyage: {
+    name: "Bon Voyage!",
+    icon: bonVoyageIcon,
+    github: "https://github.com/auteenie/bon-voyage",
+    web: "https://auteenie.github.io/bon-voyage/",
+    screenshot: bonVoyageScreenshot,
+    preview: bonVoyagePreview,
+    description:
+      "Bon Voyage! is designed for explorers with a passion for travel. Our app lets users collect digital passport stamps, track their journeys, and discover new destinations. Whether you're reminiscing about past adventures or planning your next getaway, Bon Voyage! turns your travels into a beautifully curated experience.",
   },
 };
